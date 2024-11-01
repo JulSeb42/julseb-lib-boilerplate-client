@@ -7,7 +7,7 @@ export const AboutPage = () => {
     return (
         <Page title="About">
             <Text tag="h1">About page</Text>
-            <p>
+            {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus eu diam non tortor ultricies porttitor. Donec ornare
                 magna tellus, non elementum mauris gravida eu. Nunc eleifend
@@ -356,7 +356,7 @@ export const AboutPage = () => {
                 Pellentesque felis mi, sagittis eu feugiat vitae, aliquet vitae
                 elit. Cras tincidunt ultrices lectus, vel congue est. Donec nec
                 accumsan nibh, a hendrerit nibh.
-            </p>
+            </p> */}
         </Page>
     )
 }
