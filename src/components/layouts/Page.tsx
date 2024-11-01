@@ -56,7 +56,6 @@ export const Page: FC<IPage> = ({
                     />
                 ),
                 links: navLinks,
-                // position: "fixed",
             }}
             main={{ size: mainWidth }}
         >
