@@ -1,7 +1,13 @@
 /*=============================================== Page ===============================================*/
 
 import { useState, useEffect } from "react"
-import { PageLayout, ButtonIcon, useLibTheme, ResetScroll } from "@julseb-lib/react"
+import { useLocation } from "react-router-dom"
+import {
+    PageLayout,
+    ButtonIcon,
+    useLibTheme,
+    // ResetScroll
+} from "@julseb-lib/react"
 import type { LibMainSize } from "@julseb-lib/react/types"
 import type { ILibPageLayout } from "@julseb-lib/react/component-props"
 import { SITE_DATA, navLinks } from "data"
@@ -16,6 +22,16 @@ export const Page: FC<IPage> = ({
     cover,
     mainWidth = "default",
 }) => {
+    const { pathname, search } = useLocation()
+
+    useEffect(() => {
+        document.documentElement.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        })
+    }, [pathname, search])
+
     const { selectedTheme, toggleTheme } = useLibTheme()
     const [icon, setIcon] = useState<undefined | "sun" | "moon">(undefined)
 
@@ -51,12 +67,13 @@ export const Page: FC<IPage> = ({
                     />
                 ),
                 links: navLinks,
+                position: "fixed"
             }}
             main={{ size: mainWidth }}
         >
             {children}
 
-            <ResetScroll />
+            {/* <ResetScroll /> */}
         </PageLayout>
     )
 }
