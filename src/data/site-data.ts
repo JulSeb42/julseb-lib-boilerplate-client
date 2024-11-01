@@ -1,7 +1,7 @@
 /*=============================================== Site data ===============================================*/
 
 export const SITE_DATA = {
-    NAME: "react-client",
+    NAME: "julseb-lib-boilerplate-client",
     FAVICON: "/vite.svg",
     EMAIL: "",
     AUTHOR: "",
