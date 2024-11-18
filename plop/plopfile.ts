@@ -30,7 +30,7 @@ export default (plop: NodePlopAPI) => {
 
     /*====================== Partials ======================*/
 
-    pascalName(plop)
+    pascalName(plop) // Shortcut to write {{ pascalCase name }} => {{>pascalName}}
 
     /*====================== Generators ======================*/
 
