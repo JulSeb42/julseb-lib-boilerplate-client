@@ -8,7 +8,7 @@
         "build": "tsc && vite build",
         "lint": "./node_modules/.bin/eslint",
         "preview": "vite preview",
-        "plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plop/plopfile.ts",
+        "plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=./plop/plopfile.ts",
         "plop:c": "yarn plop component",
         "plop:sc": "yarn plop single-component",
         "plop:p": "yarn plop page",
