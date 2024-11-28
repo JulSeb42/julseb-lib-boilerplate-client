@@ -1,7 +1,12 @@
 /*=============================================== App ===============================================*/
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { ThemeProvider, PageLoading, useLibTheme } from "@julseb-lib/react"
+import { Routes, Route } from "react-router-dom"
+import {
+    ThemeProvider,
+    useLibTheme,
+    ToasterProviderWrapper,
+    uuid,
+} from "@julseb-lib/react"
 import { routes } from "routes"
 
 export const App = () => {
@@ -9,10 +14,17 @@ export const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <RouterProvider
-                router={createBrowserRouter(routes)}
-                fallbackElement={<PageLoading />}
-            />
+            <ToasterProviderWrapper>
+                <Routes>
+                    {routes.map(route => (
+                        <Route
+                            key={uuid()}
+                            path={route.path}
+                            element={route.element}
+                        />
+                    ))}
+                </Routes>
+            </ToasterProviderWrapper>
         </ThemeProvider>
     )
 }
