@@ -4,9 +4,7 @@ import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 
 export const ResetScroll = () => {
-    const { pathname, search, state } = useLocation()
-
-    console.log({ pathname, search, state })
+    const { pathname, search } = useLocation()
 
     useEffect(() => {
         document.documentElement.scrollTo({

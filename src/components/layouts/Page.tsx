@@ -1,13 +1,9 @@
 /*=============================================== Page ===============================================*/
 
 import { PageLoading, Wrapper, Main } from "@julseb-lib/react"
-import { SwitchTheme } from "./SwitchTheme"
 import { BaseLayout, type IBaseLayout } from "./BaseLayout"
-import { Header } from "./Header"
-import { SITE_DATA, navLinks } from "data"
-import { PATHS } from "routes"
+import { Header } from "./Header/Header"
 import type { LibMainSize } from "@julseb-lib/react/types"
-import type { ILibPageLayout } from "@julseb-lib/react/component-props"
 
 export const Page: FC<IPage> = ({
     children,

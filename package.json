@@ -17,6 +17,7 @@
     "dependencies": {
         "@julseb-lib/react": "^0.0.76",
         "axios": "^1.7.8",
+        "cors": "^2.8.5",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-router-dom": "^7.0.1",
@@ -25,6 +26,7 @@
     "devDependencies": {
         "@eslint/compat": "^1.2.3",
         "@eslint/js": "^9.15.0",
+        "@types/cors": "^2.8.17",
         "@types/figlet": "^1.7.0",
         "@types/jest": "^29.5.14",
         "@types/mocha": "^10.0.10",

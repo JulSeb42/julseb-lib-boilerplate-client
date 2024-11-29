@@ -1,8 +1,8 @@
 /*=============================================== BaseLayout component ===============================================*/
 
 import { Helmet } from "@julseb-lib/react"
-import { ResetScroll } from "./ResetScroll"
 import { SITE_DATA } from "data"
+import { ResetScroll } from "./ResetScroll"
 
 export const BaseLayout: FC<IBaseLayout> = ({
     children,

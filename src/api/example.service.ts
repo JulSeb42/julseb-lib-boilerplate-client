@@ -1,6 +1,6 @@
 /*=============================================== User service ===============================================*/
 
-import { http } from "api"
+import { http } from "./http-common"
 import type { ApiResponse } from "types"
 
 type User = {

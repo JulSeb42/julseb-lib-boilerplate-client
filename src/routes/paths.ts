@@ -3,5 +3,6 @@
 export const PATHS = {
     ROOT: "/",
     ABOUT: "/about",
-    /* prepend path - do not remove */
+    API: "/demo-api",
+	/* prepend path - do not remove */    
 }

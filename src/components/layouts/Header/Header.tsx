@@ -1,8 +1,8 @@
 /*=============================================== Header component ===============================================*/
 
 import { Header as Container } from "@julseb-lib/react"
-import { Nav } from "./Nav"
 import { SITE_DATA } from "data"
+import { Nav } from "./Nav"
 
 export const Header = () => {
     return (
