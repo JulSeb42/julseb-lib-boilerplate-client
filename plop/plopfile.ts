@@ -1,8 +1,7 @@
 /*=============================================== Plopfile ===============================================*/
 
 import type { NodePlopAPI } from "plop"
-import chalk from "chalk"
-import figlet from "figlet"
+import welcome from "cli-welcome"
 import { runCommand } from "./actions/index.js"
 import {
     generateComponent,
@@ -18,11 +17,18 @@ import {
 import { pascalName } from "./partials/index.js"
 
 export default (plop: NodePlopAPI) => {
-    console.log(
-        chalk.blueBright(
-            figlet.textSync("JulSeb CLI", { horizontalLayout: "full" })
-        )
-    )
+    /*====================== Greetings ======================*/
+
+    welcome({
+        title: "Julseb CLI",
+        tagLine: "A tool to generate React with TS apps",
+        description: "",
+        bgColor: "#ffffff",
+        color: "#000000",
+        bold: true,
+        clear: true,
+        version: "1.0.0",
+    })
 
     /*====================== Actions ======================*/
 

@@ -52,14 +52,14 @@ export default (plop: NodePlopAPI) => {
                     path: `${BASE_PATH}/routes/routes.tsx`,
                     template:
                         'import { {{ pascalCase name }} } from "pages/{{ pascalCase name }}"\n$1',
-                    pattern: /(\/\* prepend import - do not remove \*\/)/g,
+                    pattern: /(\/\* Prepend import - DO NOT REMOVE \*\/)/g,
                 },
                 "Adding your new page to the paths array",
                 {
                     type: "modify",
                     path: `${BASE_PATH}/routes/routes.tsx`,
                     template: `{\n        path: PATHS.{{ constantCase name }},\n        element: <{{ pascalCase name }} />\n    },\n\t$1`,
-                    pattern: /(\/\* prepend route - do not remove \*\/)/g,
+                    pattern: /(\/\* Prepend route - DO NOT REMOVE \*\/)/g,
                 },
                 "Adding path to paths list",
                 {
@@ -67,7 +67,7 @@ export default (plop: NodePlopAPI) => {
                     path: `${BASE_PATH}/routes/paths.ts`,
                     template:
                         '{{ constantCase name }}: "/{{ kebabCase path }}",\n\t$1    ',
-                    pattern: /(\/\* prepend path - do not remove \*\/)/g,
+                    pattern: /(\/\* Prepend path - DO NOT REMOVE \*\/)/g,
                 },
             ]
 

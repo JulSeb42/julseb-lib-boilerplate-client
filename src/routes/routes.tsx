@@ -5,8 +5,7 @@ import { PATHS } from "routes"
 import { Homepage } from "pages/Homepage"
 import { NotFound } from "pages/NotFound"
 import { AboutPage } from "pages/About"
-import { Api } from "pages/DemoApi"
-/* prepend import - do not remove */
+/* Prepend import - DO NOT REMOVE */
 
 type Route = {
     path: string
@@ -26,11 +25,7 @@ export const routes: Array<Route> = [
 
     { path: PATHS.ABOUT, element: <AboutPage /> },
 
-    {
-        path: PATHS.API,
-        element: <Api />
-    },
-	/* prepend route - do not remove */
+    /* Prepend route - DO NOT REMOVE */
 
     ...redirects,
 ]
