@@ -58,7 +58,7 @@ export default (plop: NodePlopAPI) => {
                 {
                     type: "modify",
                     path: `${BASE_PATH}/routes/routes.tsx`,
-                    template: `{\n        path: PATHS.{{ constantCase name }},\n        element: <{{ pascalCase name }} />\n    },\n\t$1`,
+                    template: `{ path: PATHS.{{ constantCase name }}, element: <{{ pascalCase name }} /> },\n\t$1`,
                     pattern: /(\/\* Prepend route - DO NOT REMOVE \*\/)/g,
                 },
                 "Adding path to paths list",
@@ -66,7 +66,7 @@ export default (plop: NodePlopAPI) => {
                     type: "modify",
                     path: `${BASE_PATH}/routes/paths.ts`,
                     template:
-                        '{{ constantCase name }}: "/{{ kebabCase path }}",\n\t$1    ',
+                        '{{ constantCase name }}: "{{ path }}",\n\t$1',
                     pattern: /(\/\* Prepend path - DO NOT REMOVE \*\/)/g,
                 },
             ]

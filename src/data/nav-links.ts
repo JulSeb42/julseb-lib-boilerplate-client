@@ -6,5 +6,4 @@ import type { INavLink } from "types"
 export const navLinks: Array<INavLink> = [
     { text: "Home", to: PATHS.ROOT, end: true },
     { text: "About", to: PATHS.ABOUT },
-    { text: "API", to: PATHS.API },
 ]
