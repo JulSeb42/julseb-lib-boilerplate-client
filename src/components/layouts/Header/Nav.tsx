@@ -2,7 +2,6 @@
 
 import { NavLink } from "react-router-dom"
 import { navLinks } from "data"
-import { SwitchTheme } from "./SwitchTheme"
 
 export const Nav = () => {
     return (
@@ -22,8 +21,6 @@ export const Nav = () => {
                     </button>
                 )
             )}
-
-            <SwitchTheme />
         </>
     )
 }
