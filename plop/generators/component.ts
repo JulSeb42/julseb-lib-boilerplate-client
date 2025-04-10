@@ -1,5 +1,3 @@
-/*=============================================== Generate component ===============================================*/
-
 import type { NodePlopAPI } from "plop"
 import { BASE_PATH } from "../utils/index.js"
 

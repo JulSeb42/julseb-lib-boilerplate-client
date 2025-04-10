@@ -1,5 +1,3 @@
-/*=============================================== Site data ===============================================*/
-
 export const SITE_DATA = {
     NAME: "julseb-lib-boilerplate-client",
     FAVICON: "/vite.svg",

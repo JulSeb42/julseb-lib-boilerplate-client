@@ -1,5 +1,3 @@
-/*=============================================== Global types ===============================================*/
-
 import type { FunctionComponent, ElementType as ElType } from "react"
 import "styled-components"
 import type {

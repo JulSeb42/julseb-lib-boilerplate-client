@@ -1,5 +1,3 @@
-/*=============================================== Generate page ===============================================*/
-
 import type { NodePlopAPI } from "plop"
 import { toKebabCase, toTitleCase } from "@julseb-lib/utils"
 import { BASE_PATH } from "../utils/index.js"
@@ -65,8 +63,7 @@ export default (plop: NodePlopAPI) => {
                 {
                     type: "modify",
                     path: `${BASE_PATH}/routes/paths.ts`,
-                    template:
-                        '{{ constantCase name }}: "{{ path }}",\n\t$1',
+                    template: '{{ constantCase name }}: "{{ path }}",\n\t$1',
                     pattern: /(\/\* Prepend path - DO NOT REMOVE \*\/)/g,
                 },
             ]

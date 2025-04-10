@@ -1,5 +1,3 @@
-/*=============================================== Page ===============================================*/
-
 import { PageLoading, Wrapper, Main } from "@julseb-lib/react"
 import { BaseLayout, type IBaseLayout } from "./BaseLayout"
 import { Header } from "./Header/Header"

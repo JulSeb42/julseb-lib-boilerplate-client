@@ -1,5 +1,3 @@
-/*=============================================== Nav component ===============================================*/
-
 import { NavLink } from "react-router-dom"
 import { navLinks } from "data"
 

@@ -1,5 +1,3 @@
-/*=============================================== BaseLayout component ===============================================*/
-
 import { Helmet } from "@julseb-lib/react"
 import { SITE_DATA } from "data"
 import { ResetScroll } from "./ResetScroll"

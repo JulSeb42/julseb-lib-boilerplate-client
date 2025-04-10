@@ -1,5 +1,3 @@
-/*=============================================== App ===============================================*/
-
 import { Routes, Route } from "react-router-dom"
 import { ToasterProviderWrapper, uuid } from "@julseb-lib/react"
 import { routes } from "routes"

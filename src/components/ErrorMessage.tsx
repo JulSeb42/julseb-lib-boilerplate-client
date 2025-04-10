@@ -1,5 +1,3 @@
-/*=============================================== ErrorMessage component ===============================================*/
-
 import { Alert, uuid } from "@julseb-lib/react"
 import type { IErrorMessage as ErrorType } from "types"
 

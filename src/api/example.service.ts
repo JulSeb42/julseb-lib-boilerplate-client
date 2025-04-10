@@ -1,5 +1,3 @@
-/*=============================================== User service ===============================================*/
-
 import { http } from "./http-common"
 import type { ApiResponse } from "types"
 

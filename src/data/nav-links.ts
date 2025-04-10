@@ -1,5 +1,3 @@
-/*=============================================== NavLinks ===============================================*/
-
 import { PATHS } from "routes"
 import type { INavLink } from "types"
 

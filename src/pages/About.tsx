@@ -1,5 +1,3 @@
-/*=============================================== AboutPage ===============================================*/
-
 import { Text } from "@julseb-lib/react"
 import { Page } from "components"
 

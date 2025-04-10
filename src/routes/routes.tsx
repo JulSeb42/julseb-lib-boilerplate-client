@@ -1,5 +1,3 @@
-/*=============================================== Routes ===============================================*/
-
 // import { Navigate } from "react-router-dom"
 import { PATHS } from "routes"
 import { Homepage } from "pages/Homepage"

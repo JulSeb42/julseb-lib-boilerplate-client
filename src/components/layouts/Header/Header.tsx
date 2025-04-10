@@ -1,5 +1,3 @@
-/*=============================================== Header component ===============================================*/
-
 import { Header as Container } from "@julseb-lib/react"
 import { SITE_DATA } from "data"
 import { Nav } from "./Nav"
